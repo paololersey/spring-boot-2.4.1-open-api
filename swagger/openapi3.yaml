@@ -1,0 +1,15 @@
+openapi: 3.0.1
+info:
+  title: OpenAPI definition
+  version: v0
+servers:
+- url: http://localhost/
+  description: ' Default server url'
+paths:
+  /is-alive:
+    get:
+      description: is-alive
+      operationId: isAlive
+      responses:
+        200 OK: {}
+components: {}
