@@ -16,7 +16,8 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 @RequestMapping(value = "/")
 public class Controller {
 
-    @Operation(description="is-alive"/*, responses = {@ApiResponse(responseCode = "200", description = "OK")}*/)
+    /* uncomment @Operation notation to generate a correct open api yaml */
+    /*@Operation(description="is-alive", responses = {@ApiResponse(responseCode = "200", description = "OK")})*/
 	@GetMapping(value = "is-alive", produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	public Boolean isAlive() {
         return true;
